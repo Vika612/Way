@@ -1,0 +1,35 @@
+.title-main {
+  position: relative;
+  font-size: 55px;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: $black-2;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 175px;
+    height: 3px;
+    background-color: $red-1;
+    content: "";
+  }
+}
+
+@media (max-width: 1023px) {
+  .title-main {
+    font-size: 30px;
+    
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .title-main {
+    font-size: 24px;
+  }
+}

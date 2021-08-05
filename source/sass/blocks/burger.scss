@@ -1,0 +1,27 @@
+.burger__line {
+  position: absolute;
+  left: 25px;
+  z-index: 2;
+  
+  width: 22px;
+  height: 1px;
+  background-color: $white;
+}
+
+.burger__line--first {
+  top: 16px;
+}
+
+.burger__line--second {
+  top: 50%;
+}
+
+.burger__line--third {
+  bottom: 16px;
+}
+
+@media (max-width: 767px) {
+  .burger__line {
+    left: 14px;
+  }
+}

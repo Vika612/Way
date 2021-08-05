@@ -1,0 +1,12 @@
+.price-button {
+  width: 310px;
+  padding: 30px;
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  .price-button {
+    width: 288px;
+    padding: 20px 30px;
+  }
+}

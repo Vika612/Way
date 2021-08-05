@@ -1,0 +1,141 @@
+.intro-price {
+  padding: 0;
+  padding-left: 85px;
+}
+
+.intro-price__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 120px;
+  padding-bottom: 20px;
+}
+
+.intro-price__description {
+  margin-bottom: 60px;
+  color: $grey-main;
+}
+
+.intro-price__phone-label {
+  margin-bottom: 0;
+  padding-bottom: 13px;
+  padding-left: 45px;
+
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: $black-1;
+}
+
+.intro-price__phone-num {
+  position: relative;
+  margin: 0;
+  padding-left: 45px;
+
+  font-size: 18px;
+  line-height: 2.0;
+  font-weight: 400;
+  text-decoration: underline;
+  color: $black-1;
+  
+  font-size: 20px;
+  line-height: 1.6;
+
+  &::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    content: url("../img/icon/phone-red.svg");
+  }
+
+  &:hover,
+  &:focus {
+   color: $red-1; 
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 1200px) {
+  .intro-price {
+    padding: 0 12px;
+  }
+
+  .intro-price__phone-label {
+    padding-left: 0;
+  }
+
+  .intro-price__phone-num {
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 1.7;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .intro-price {
+    order: 1;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .intro-price__wrap {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-price__title {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  .intro-price__description {
+    margin-bottom: 17px;
+    margin-top: 17px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .intro-price__phone-label {
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .intro-price__phone-num {
+    margin: 0;
+    padding: 0;
+  
+    font-size: 18px;
+    line-height: 1.7;
+    color: $red-1;
+  
+    &:hover,
+    &:focus {
+     color: $red-2; 
+    }
+  
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .intro-price__wrap {
+    margin-bottom: 15px;
+  }
+
+  .intro-price__description {
+    margin-top: 23px;
+    margin-bottom: 0;
+  }
+}

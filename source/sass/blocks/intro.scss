@@ -1,0 +1,136 @@
+.intro {
+  position: relative;
+  min-height: 860px;
+  margin-bottom: 200px;
+  background: url("../img/bg/intro-L@1x.jpg") no-repeat center;
+  background-size: cover; 
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: $bg-nav;
+    width: 100%;
+    min-height: 860px;
+  }
+}
+
+.intro__wrapper {
+  max-width: 415px;
+  margin: 0 18.5% 0 auto;
+  padding-top: 185px;
+}
+
+.intro__title {
+  margin: 0;
+  margin-bottom: 10px;
+  
+  font-size: 55px;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: $white;
+}
+
+.intro__description {
+  margin-bottom: 35px;
+  color: $white;
+}
+
+.intro__button {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 340px;
+  padding: 30px 40px;
+
+  &::after {
+    content: url("../img/icon/arrow-down.svg");
+    width: 14px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .intro {
+    min-height: 345px;
+    margin-bottom: 80px;
+    background: url("../img/bg/intro-M@1x.jpg") no-repeat center;
+    background-size: 100%;
+
+    &::before {
+      min-height: 345px;
+    }
+  }
+
+  .intro__wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+    padding-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro__title {
+    margin-bottom: 0;
+    font-size: 32px;
+  }
+  
+  .intro__description {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .intro__button {
+    width: 250px;
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro {
+    position: relative;
+    min-height: 235px;
+    margin-bottom: 250px;
+    background: url("../img/bg/intro-S@1x.jpg") no-repeat center;
+    background-size: 100%;
+
+    &::before {
+      min-height: 235px;
+    }
+  }
+ 
+  .intro__wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 81px;
+  }
+
+  .intro__title {
+    width: 288px;
+    padding: 0 25px;
+    padding-bottom: 85px;
+    font-size: 24px;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  
+  .intro__description {
+    width: 288px;
+    padding-bottom: 10px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: $black-2;
+  }
+
+  .intro__button {
+    width: 288px;
+  }
+}

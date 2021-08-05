@@ -1,0 +1,29 @@
+.corporate-travels {
+  flex-basis: 33.3%;
+  padding-left: 54px;
+  padding-right: 10px;
+}
+
+.corporate-travels__description {
+  padding-top: 5px;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: $grey-footer;
+}
+
+@media (max-width: 1023px) {
+  .corporate-travels {
+    flex-basis: 100%;
+    margin-top: 25px;
+    padding: 10px 15px 0;
+    text-align: center;
+    border-top: 1px solid $grey-border;
+  }
+}
+
+@media (max-width: 767px) {
+  .corporate-travels {
+    padding: 0 3px 0;
+  }
+}

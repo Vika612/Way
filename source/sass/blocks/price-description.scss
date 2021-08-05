@@ -1,0 +1,23 @@
+.price-description {
+  margin: 0;
+  padding-bottom: 28px;
+  padding-right: 20px;
+  
+  font-size: 16px;
+  line-height: 1.5;
+  border-bottom: 1px solid $grey-tabs;
+  color: $black-2;
+}
+
+@media (max-width: 1023px) {
+  .price-description {
+    padding: 13px 30px 28px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .price-description {
+    padding-bottom: 8px;
+  }
+}

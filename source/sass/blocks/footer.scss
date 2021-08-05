@@ -1,0 +1,15 @@
+.footer__wrapper {
+  margin-bottom: 70px;
+  padding: 0 15px 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .footer__wrapper {
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+}

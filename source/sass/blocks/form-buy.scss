@@ -1,0 +1,35 @@
+.form-buy {
+  padding: 48px 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-buy__title {
+  margin-bottom: 50px;
+  font-size: 25px;
+  line-height: 1.7;
+  font-weight: 600;
+  color: $black-3;
+}
+
+.form-buy__item {
+  margin: 0;
+  margin-bottom: 17px;
+}
+
+.form-buy__item input {
+  width: 270px;
+  padding: 15px;
+}
+
+.form-buy__item input::placeholder {
+  font-size: 14px;
+  line-height: 1.2;
+  color: $black-3;
+}
+
+.form-buy__button {
+  padding: 18px 40px;
+  border: none;
+}

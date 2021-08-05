@@ -1,0 +1,38 @@
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.cards__item:nth-child(2n) {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.cards__item:last-child {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+@media (max-width: 1023px) {
+  .cards__list {
+    justify-content: space-between;
+  }
+
+  .cards__item:nth-child(2n) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .cards__item:last-child {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cards__item:last-child {
+    margin-top: 0;
+  }
+}
